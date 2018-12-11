@@ -15,13 +15,11 @@ public class ValidatorPostanskogBroja implements Runnable {
     }
 
     public boolean provjeriPostanskiBroj(String broj) throws Exception {
-        // nadjeno na netu
         URL link = new URL("http://c9.etf.unsa.ba/proba/postanskiBroj.php?postanskiBroj=" + broj);
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(link.openStream())
         );
-        String sadrzaj = "";
-        String line;
+        String sadrzaj = "", line;
         while ((line = in.readLine()) != null)
             sadrzaj += line;
 
