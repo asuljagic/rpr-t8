@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="ba.unsa.etf.rpr.tutorijal08.NoviController"
+          minHeight="Infinity" maxHeight="Infinity">
+
+    <padding><Insets top="5" right="5" bottom="5" left="5"/></padding>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" percentWidth="30"/>
+        <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" percentWidth="70"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="16" vgrow="ALWAYS"/>
+        <RowConstraints percentHeight="16" vgrow="ALWAYS"/>
+        <RowConstraints percentHeight="16" vgrow="ALWAYS"/>
+        <RowConstraints percentHeight="16" vgrow="ALWAYS"/>
+        <RowConstraints percentHeight="16" vgrow="ALWAYS"/>
+        <RowConstraints percentHeight="16" vgrow="ALWAYS"/>
+    </rowConstraints>
+    <children>
+        <Label text="Ime:"/>
+        <TextField fx:id="imeField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Prezime:"  GridPane.rowIndex="1"/>
+        <TextField fx:id="prezimeField" GridPane.columnIndex="1"  GridPane.rowIndex="1"/>
+
+        <Label text="Adresa:"  GridPane.rowIndex="2"/>
+        <TextField fx:id="adresaField" GridPane.columnIndex="1"  GridPane.rowIndex="2"/>
+
+        <Label text="Grad:"  GridPane.rowIndex="3"/>
+        <TextField fx:id="gradField" GridPane.columnIndex="1"  GridPane.rowIndex="3"/>
+
+        <Label text="Postanski broj:"  GridPane.rowIndex="4"/>
+        <TextField fx:id="brojField" GridPane.columnIndex="1"  GridPane.rowIndex="4"/>
+
+    </children>
+
+</GridPane>
